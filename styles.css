@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Audiowide', cursive;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(assets/img/bck-grid_sadgirlonline.gif);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 500px;
+  border: 2px solid rgb(182, 80, 146);
+  border-radius: 50px 10px;
+  background-color: rgb(182, 80, 146);
+}
+.main-container:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/img/comp016_sadgirlonline.gif);
+  background-size: 330px 280px;
+  opacity: 30%;
+  border-radius: 50px 10px;
+}
+
+/* Numeri e operatori */
+
+.calculator-grid {
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 77px);
+  grid-template-rows: minmax(110px, auto) repeat(5, 70px);
+  padding: 10px;
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 1.7rem;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+}
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+.calculator-grid > button:active {
+  background-color: rgba(255, 255, 255, .50);
+}
+
+.large-button {
+  grid-column: span 2;
+  border-radius: 10px;
+}
+
+
+/* Display */
+
+.display {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .65);
+  border-radius: 5px;
+  background-image: url(assets/img/greengrid.jpg);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border: 2px solid rgb(82, 18, 60);
+  border-radius: 50px 10px;
+  margin-bottom: 3px;
+}
+.display .previous-operand {
+  color: rgb(255, 117, 207, .75);
+  font-size: 1.2rem;
+}
+.display .current-operand {
+  color: rgb(255, 117, 207, .90);
+  font-size: 2.2rem;
+}
+
+
+/* Credits */
+
+p {
+  font-size: 11px;
+  color: rgb(120, 120, 120);
+  margin-top: 50px;
+  letter-spacing: .1rem;
+}
+p > a {
+  color: rgb(255, 101, 237);
+}
+p > a:hover {
+  color: rgb(47, 255, 123);
+}
