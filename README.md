@@ -20,7 +20,7 @@
   [![Issues][issues-shield]][issues-url]
   [![License][license-shield]][license-url]
   [![LinkedIn][linkedin-shield]][linkedin-url] <br />
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/656fb237-0fe1-4432-99d3-49dd7f954f45/deploy-status)](https://app.netlify.com/sites/calculat0r-sc/deploys)
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/67358e9b-f156-48cf-b7e1-472eb808962b/deploy-status)](https://app.netlify.com/sites/calculat0r-sc/deploys)
 
 </div>
 
